@@ -2,7 +2,16 @@
 
 A simple multi page informational site built using node js, html and javascript for the odin Project.
 
-The 'express' branch showcases the same project written using the express application.
+```
+    The 'express' branch showcases the same project written using the express application.
+
+    In order to run the express app, clone the express branch, install all node dependencies and run:
+
+    npm run start
+
+    In your console.
+
+```
 
 [Live Link](https://odin-node-site.tmonee23.repl.co/)
 
