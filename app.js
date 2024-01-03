@@ -14,6 +14,14 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+const myLogger = function (req, res, next) {
+  console.log('LOGGED');
+  console.log(req.originalUrl);
+  next();
+};
+
+app.use(myLogger);
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
